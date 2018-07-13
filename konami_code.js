@@ -20,7 +20,7 @@ function init() {
     if (index === 0) {
       for (var i = 0; i < codes.length ; i++) {
         if (key === codes[i]) {
-          index ++
+          index++
           if (index === codes.length) {
             alert('Yay')
           }
