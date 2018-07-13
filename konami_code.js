@@ -16,60 +16,10 @@ function init() {
   document.body.addEventListener('keydown', function(e) {
   const key = e.key;
   var index = 0
-
-  if (key === codes[index]) {
-    index ++
-    if (key === codes[index]) {
-      index ++
-      if (key === codes[index]) {
-        index ++
-        if (key === codes[index]) {
-          index ++
-          if (key === codes[index]) {
-            index ++
-            if (key === codes[index]) {
-              index ++
-              if (key === codes[index]) {
-                index ++
-                if (key === codes[index]) {
-                  index ++
-                  if (key === codes[index]) {
-                    index ++
-                    if (key === codes[index]) {
-                      index ++
-                      if (index === codes.length) {
-                        alert('hurray');
-                        index = 0
-                      }
-                    } else {
-                      index = 0
-                    }
-                  } else {
-                    index = 0
-                  }
-                } else {
-                  index = 0
-                }
-              } else {
-                index = 0
-              }
-            } else {
-              index = 0
-            }
-          } else {
-            index = 0
-          }
-        } else {
-          index = 0
-        }
-      } else {
-        index = 0
-      }
-    } else {
-      index = 0;
+  
+  for (var i = 0; i < codes.length; i++) 
+    if (e.key === codes[i]) {
+      alert('hurray')
     }
-  } else {
-    index = 0;
-  }
   })
 }
