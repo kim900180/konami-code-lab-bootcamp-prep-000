@@ -22,7 +22,7 @@ function init() {
         if (key === codes[i]) {
           index++
           if (index === codes.length) {
-            alert('Yay')
+            alert('Yay');
             index = 0;
           }
         } else {
