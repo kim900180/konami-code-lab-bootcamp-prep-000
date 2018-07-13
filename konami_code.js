@@ -21,7 +21,7 @@ function init() {
       for (var i = 0; i < codes.length ; i++) {
         if (key === codes[i]) {
           index++;
-          if (index === codes.length) {
+          if (key === codes[codes.length - 1]) {
             alert('Yay');
             index = 0;
           }
