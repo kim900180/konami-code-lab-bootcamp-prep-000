@@ -17,6 +17,17 @@ function init() {
     const key = e.key;
     var index = 0
     
-    do 
+    if (index === 0) {
+      for (var i = 0; i < codes.length ; i++) {
+        if (key === codes[index]) {
+          index ++
+          if (index === codes.length) {
+            alert('Yay')
+          }
+        } else {
+          index = 0
+        }
+      }
+    }
   })
 }
